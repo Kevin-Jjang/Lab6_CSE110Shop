@@ -40,6 +40,8 @@ class ProductItem extends HTMLElement {
         alert('Removed from Cart!');
       }
       count.textContent = cartList.length;
+      // console.log(cartList);
+      // console.log(JSON.stringify(cartList));
       localStorage.setItem('cart', JSON.stringify(cartList));
     }
 
